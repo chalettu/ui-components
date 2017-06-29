@@ -71,6 +71,12 @@ export default class AvailableComponentsService {
           'Site switcher',
           '/basic',
           require('./../views/site-switcher/basic.html'), 'demoSiteSwitcher as vm')
+      ]),
+       new AvailableGroup('dialogs', 'Dialog Component', '/dialogs', [
+        new AvailableComponent('dialog',
+          'Dialog',
+          '/dialog',
+          require('./../views/dialogs/main.html'), 'demoDialogs as vm')
       ])
     ];
   }
